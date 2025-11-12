@@ -1,17 +1,3 @@
-#!/usr/bin/env python3
-import random
-
-def main():
-    # Генерируем 4-значное число с разными цифрами
-    while True:
-        number = random.randint(1000, 9999)
-        if len(set(str(number))) == 4:
-            break
-
-    print("Компьютер загадал 4-значное число")
-
-    popit = 0
-
     while True:
         chislo = input("Ваш вариант: ")
 
@@ -35,9 +21,3 @@ def main():
         if bulls == 4:
             print(f"Вы угадали число {number} за {attepopitmpts} попыток")
             break
-
-
-if __name__ == "__main__":
-    main()
-#Если файл запущен напрямую: __name__ == "__main__"
-#Если файл импортирован: __name__ будет равно имени файла
